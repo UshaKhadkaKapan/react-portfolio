@@ -1,8 +1,9 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 
 const Contactme = () => {
   return (
-    <section className="container mt-5" id="contact">
+    <Container className=" mt-5" id="contact">
       <div className="contact-icons rounded py-3">
         <div className="sec-title fs-1 fw-bolder text-center m-auto">
           Contact Me
@@ -26,7 +27,7 @@ const Contactme = () => {
           </a>
         </div>
       </div>
-    </section>
+    </Container>
   );
 };
 

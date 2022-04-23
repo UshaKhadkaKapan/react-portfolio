@@ -1,4 +1,5 @@
 import React from "react";
+import { Row, Col, Container } from "react-bootstrap";
 
 const Project = () => {
   return (
@@ -7,23 +8,22 @@ const Project = () => {
         Projects
       </div>
       <div className="proj-content  mt-5">
-        <div className="container">
-          <div className="row  mt-5 py-5">
-            <div className="col-md-6 ">
+        <Container className="container">
+          <Row className="mt-5 py-5">
+            <Col md="6">
               <img
                 src={require("./Project3.PNG")}
                 width="80%"
                 className="img-fluid"
                 alt=""
               />
-            </div>
-            <div className="col-md-6 mt-5 mt-md-0">
+            </Col>
+            <Col md="6" className=" mt-5 mt-md-0">
               <h2>E-commerce Website</h2>
               <div className="links">
                 <a href="github link" target="blank">
                   <i className="fab fa-github" aria-hidden="true"></i>
-                </a>
-
+                </a>{" "}
                 <a href="github link" target="blank">
                   <i className="fab fa-chrome" aria-hidden="true"></i>
                 </a>
@@ -36,25 +36,24 @@ const Project = () => {
                 tired to make real looking e-commerce website. I made this for
                 my University assignment.
               </p>
-            </div>
-          </div>
+            </Col>
+          </Row>
 
-          <div className="row mt-5 py-5">
-            <div className="col-md-6 order-md-2 ">
+          <Row className="mt-5 py-5">
+            <Col md="6" className="order-md-2 ">
               <img
                 src={require("./Project2.PNG")}
                 width="80%"
                 className="img-fluid"
                 alt=""
               />
-            </div>
-            <div className="col-md-6 mt-5 mt-md-0">
+            </Col>
+            <Col md="6" className="mt-5 mt-md-0">
               <h2>Travel Blog</h2>
               <div className="links">
                 <a href="github link" target="blank">
                   <i className="fab fa-github" aria-hidden="true"></i>
-                </a>
-
+                </a>{" "}
                 <a href="github link" target="blank">
                   <i className="fab fa-chrome" aria-hidden="true"></i>
                 </a>
@@ -66,25 +65,24 @@ const Project = () => {
                 flex-box. By using flex-box, i manage to make navbar, visiting
                 places, recommendation and many more.{" "}
               </p>
-            </div>
-          </div>
+            </Col>
+          </Row>
 
-          <div className="row  mt-5 py-5">
-            <div className="col-md-6 ">
+          <Row className="mt-5 py-5">
+            <Col md="6">
               <img
                 src={require("./project1.PNG")}
                 width="80%"
                 className="img-fluid"
                 alt=""
               />
-            </div>
-            <div className="col-md-6 mt-5 mt-md-0">
+            </Col>
+            <Col md="6" className="mt-5 mt-md-0">
               <h2>Instagram Clone</h2>
               <div className="links">
                 <a href="github link" target="blank">
                   <i className="fab fa-github" aria-hidden="true"></i>
-                </a>
-
+                </a>{" "}
                 <a href="github link" target="blank">
                   <i className="fab fa-chrome" aria-hidden="true"></i>
                 </a>
@@ -96,9 +94,9 @@ const Project = () => {
                 about flex-box.By using flex-box, i manage to make navbar,
                 visiting places, recommendation and many more.
               </p>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </div>
     </section>
   );

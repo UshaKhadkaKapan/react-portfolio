@@ -1,13 +1,14 @@
 import React from "react";
 // another way to import pic
 import second from "./pic.jpg";
+import { Container, Row, Col } from "react-bootstrap";
 
 const Hero = () => {
   return (
     <div className="hero">
-      <div className="container">
-        <div className="row mt-md-5 py-3">
-          <div className="col-md-6 order-md-2 text-center ">
+      <Container>
+        <Row className="row mt-md-5 py-3">
+          <Col md="6" className="order-md-2 text-center ">
             <img
               id="img"
               src={second}
@@ -15,8 +16,8 @@ const Hero = () => {
               width="80%"
               className="ml-auto"
             />
-          </div>
-          <div className="col pt-5">
+          </Col>
+          <Col md="6" className="pt-5">
             <h4>Hi I am Usha</h4>
             <h1>Software Developer</h1>
             <p className="pt-4">
@@ -26,9 +27,9 @@ const Hero = () => {
               I love to watch horror movies and cartoons.I love to cook also but
               it never taste good😂.
             </p>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };
