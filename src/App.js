@@ -23,6 +23,7 @@ function App() {
           <Route path="/project" element={<Project />} />
           <Route path="/about-me" element={<AboutMe />} />
           <Route path="/contact" element={<Contactme />} />
+          <Route path="*" element={<h1>404 Page not found</h1>} />
         </Routes>
       </BrowserRouter>
     </div>
