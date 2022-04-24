@@ -7,29 +7,25 @@ import Hero from "./Hero";
 import Project from "./Project";
 import Skill from "./Skill";
 import TovNav from "./TovNav";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HomePage } from "./HomePage";
 
 function App() {
   return (
-    <div classNameName="App">
-      <div className="wrapper">
-        {/* <!-- ========= navbar=========== --> */}
-        <div id="top-nav" className="top-nave">
-          <TovNav />
-          {/* hero */}
-          <Hero />
-        </div>
-        {/* <!-- ============hero=========== --> */}
-        <Skill />
-        {/* <!-- ============hero-bg======== -->
-      <!-- ============skill section======== --> */}
-        <Project />
-        {/* <!-- ============about me======== --> */}
-        <AboutMe />
-        {/* <!-- ============contact======== --> */}
-        <Contactme />
-        {/* footer */}
-        <Footer />
-      </div>
+    <div className="wrapper">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          {/* <TovNav />
+          <Hero /> */}
+
+          <Route path="/skills" element={<Skill />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/about-me" element={<AboutMe />} />
+          <Route path="/contact" element={<Contactme />} />
+          <Route path="*" element={<h1>404 Page not found</h1>} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
