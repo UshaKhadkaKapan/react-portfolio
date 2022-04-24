@@ -18,7 +18,7 @@ const Hero = () => {
             />
           </Col>
           <Col md="6" className="pt-5">
-            <h4>Hi I am Usha</h4>
+            <h4>Hi I am Usha Khadka</h4>
             <h1>Software Developer</h1>
             <p className="pt-4">
               I am undergraduate student. I want to become software developer so
